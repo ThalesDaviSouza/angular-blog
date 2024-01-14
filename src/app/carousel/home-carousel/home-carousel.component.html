@@ -1,0 +1,15 @@
+<div class="carousel" [ngStyle]="{'background-image' : getCurrentSlideImageUrl()}">
+  <div class="fade"></div>
+  <div class="carousel-title"></div>
+  <div class="carousel-content">
+    <div class="carousel-info">
+      <h1>{{getCurrentSlide().title}}</h1>
+      <span>{{ getCurrentSlide().description }}</span> <br/>
+      <span *ngFor="let tag of getCurrentSlide().tags">{{ tag }} </span>
+    </div>
+    <div class="carousel-arrows">
+      <div class="left-arrow"> ◀ </div>
+      <div class="right-arrow"> ▶ </div>
+    </div>
+  </div>
+</div>
