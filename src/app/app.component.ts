@@ -12,10 +12,28 @@ export class AppComponent {
   slides:IImageSlider[] = [
     {
       url: '../assets/business-post.jpg',
-      title:'bussines post',
-      description: 'Bussines post description',
+      title:'business post',
+      description: 'Business post description',
       tags: ['Business', 'meeting']
-    }
+    },
+    {
+      url: '../assets/soccer-post.jpg',
+      title:'soccer post',
+      description: 'soccer post description',
+      tags: ['soccer', 'meeting']
+    },
+    {
+      url: '../assets/travel-post.jpg',
+      title:'travel post',
+      description: 'travel post description',
+      tags: ['travel', 'meeting']
+    },
+    {
+      url: '../assets/universe-post.jpg',
+      title:'universe post',
+      description: 'universe post description',
+      tags: ['universe', 'meeting']
+    },
   ]
 
 }

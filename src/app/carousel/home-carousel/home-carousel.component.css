@@ -5,6 +5,8 @@
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
+
+  transition: background-image 0.39s;
 }
 
 .carousel > * {
@@ -34,11 +36,30 @@
   justify-content: space-around;
   align-items: end;
   width: 10%;
+  color: black;
 }
 
 .carousel-arrows > * {
   cursor: pointer;
   background-color: var(--main-color);
-  padding: 5px 8px 5px 8px;
+  padding: 3px 8px;
   border-radius: 50px;
+}
+
+
+.tag{
+  padding: 4px 8px;
+  border: rgb(231, 231, 231) 1px solid;
+  border-radius: 10px;
+  margin-right: 10px;
+  text-align: center;
+  color: rgb(231, 231, 231);
+}
+
+
+.carousel-title{
+  color: var(--main-color);
+  font-size: 80px;
+  margin: 8px 20px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }

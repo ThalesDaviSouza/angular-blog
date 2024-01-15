@@ -13,6 +13,8 @@ export class HomeCarouselComponent implements OnInit {
 
   currentIndex:number = 0;
 
+  slideRigthAnimation:boolean = false;
+
   constructor() { }
 
   ngOnInit(): void {
@@ -23,7 +25,30 @@ export class HomeCarouselComponent implements OnInit {
     // return `${this.slides[this.currentIndex].url}`
   }
 
-  getCurrentSlide():IImageSlider{
+  getCurrentSlide():IImageSlider {
     return this.slides[this.currentIndex];
   }
+
+  goToNextSlide():void {
+    const isLastSlide = this.currentIndex + 1 > this.slides.length - 1;
+
+    this.slideRigthAnimation = true;
+
+    if(!isLastSlide){
+      this.currentIndex++;
+    }else{
+      this.currentIndex = 0;
+    }
+  }
+
+  goToPreviousSlide():void {
+    const isFirstSlide = this.currentIndex == 0;
+
+    if(!isFirstSlide){
+      this.currentIndex--;
+    }else{
+      this.currentIndex = this.slides.length - 1;
+    }
+  }
+
 }
