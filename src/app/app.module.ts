@@ -5,11 +5,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SidenavComponent } from './sidenav/sidenav.component';
 import { CarouselModule } from './carousel/carousel.module';
+import { SmallCardComponent } from './small-card/small-card.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    SidenavComponent
+    SidenavComponent,
+    SmallCardComponent
   ],
   imports: [
     BrowserModule,

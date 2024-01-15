@@ -1,1 +1,8 @@
-<p>sidenav works!</p>
+<section
+  (mouseenter)="expandSidenav()"
+  (mouseleave)="hideSidenav()"
+  [ngClass]="{'expanded' : expanded}"
+  >
+  <h1 *ngIf="expanded">Latest</h1>
+  <span>Expanded: {{expanded}}</span>
+</section>

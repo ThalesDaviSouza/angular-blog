@@ -1,0 +1,14 @@
+section{
+  width: 100%;
+  height: 100%;
+  width: 20vw;
+
+  position: absolute;
+  right: 0;
+  background-color: var(--main-color);
+  transition: all 0.35s ease-in-out;
+}
+
+.expanded{
+  width: 70vw;
+}

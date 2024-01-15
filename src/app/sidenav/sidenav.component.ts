@@ -7,9 +7,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SidenavComponent implements OnInit {
 
+  expanded:boolean = false;
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  expandSidenav():void{
+    this.expanded = true;
+  }
+
+  hideSidenav():void {
+    this.expanded = false;
   }
 
 }

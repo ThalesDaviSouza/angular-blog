@@ -3,3 +3,13 @@
   height: 100vh;
   display: block;
 }
+
+#sidenav{
+  width: 20vw;
+  height: 100vh;
+}
+
+main{
+  display: flex;
+  flex-direction: row;
+}
