@@ -18,6 +18,16 @@ export class HomeCarouselComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+
+    this.autoNextSlide(4000)
+
+  }
+
+  autoNextSlide(ms: number):void {
+    setTimeout((_:any) => {
+      this.goToNextSlide();
+      this.autoNextSlide(ms);
+    }, ms)
   }
 
   getCurrentSlideImageUrl():string {

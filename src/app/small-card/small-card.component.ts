@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { IPost } from '../types/IPost';
 
 @Component({
   selector: 'app-small-card',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./small-card.component.css']
 })
 export class SmallCardComponent implements OnInit {
+
+  @Input() post:IPost = {title:'', shortDescription:'', imageURL:'', tag:''};
 
   constructor() { }
 

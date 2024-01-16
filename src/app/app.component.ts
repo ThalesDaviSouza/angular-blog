@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IImageSlider } from './carousel/types/IImageSlider';
+import { IPost } from './types/IPost';
 
 @Component({
   selector: 'app-root',
@@ -34,6 +35,15 @@ export class AppComponent {
       description: 'universe post description',
       tags: ['universe', 'meeting']
     },
+  ]
+
+  latestPosts:IPost[] = [
+    {
+      title:'Drinks',
+      shortDescription: 'More fun',
+      tag: 'drinks',
+      imageURL: ''
+    }
   ]
 
 }

@@ -4,5 +4,9 @@
   [ngClass]="{'expanded' : expanded}"
   >
   <h1 *ngIf="expanded">Latest</h1>
-  <span>Expanded: {{expanded}}</span>
+  <app-small-card
+    *ngFor="let post of latestPosts"
+    [post]="post"
+  >
+  </app-small-card>
 </section>
