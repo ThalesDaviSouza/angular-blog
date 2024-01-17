@@ -3,12 +3,27 @@ section{
   height: 100%;
   width: 20vw;
 
+  padding: 20px;
+  padding-top: 5px;
   position: absolute;
   right: 0;
   background-color: var(--main-color);
   transition: all 0.35s ease-in-out;
+
+  overflow: hidden;
 }
 
 .expanded{
-  width: 70vw;
+  width: 50vw;
+  overflow-y: visible;
+}
+.expanded::-webkit-scrollbar{
+  width: 0px;
+}
+
+.posts-container{
+  width: 50vw;
+  display: flex;
+  flex-direction: row;
+  flex-flow: wrap;
 }

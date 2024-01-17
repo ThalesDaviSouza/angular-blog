@@ -1,6 +1,14 @@
 <article>
-  <img src="" alt="">
-  <span>{{ post.tag }}</span>
+  <div class="post-img-container">
+    <div
+    [ngStyle]="{'background-image': 'url('+post.imageURL+')'}"
+    id="background-image"
+    >
+      <span class="tag-container">
+        <span class="tag">{{ post.tag }}</span>
+      </span>
+    </div>
+  </div>
   <h2>{{ post.title }}</h2>
   <p>{{ post.shortDescription }}</p>
 </article>

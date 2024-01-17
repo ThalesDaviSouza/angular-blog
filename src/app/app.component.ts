@@ -42,8 +42,20 @@ export class AppComponent {
       title:'Drinks',
       shortDescription: 'More fun',
       tag: 'drinks',
-      imageURL: ''
-    }
+      imageURL: '../assets/drink-card.jpg'
+    },
+    {
+      title:'Natural',
+      shortDescription: 'More fun',
+      tag: 'Natural',
+      imageURL: '../assets/natural-card.jpg'
+    },
+    {
+      title:'Robots',
+      shortDescription: 'More fun',
+      tag: 'Robots',
+      imageURL: '../assets/robots-card.jpg'
+    },
   ]
 
 }
