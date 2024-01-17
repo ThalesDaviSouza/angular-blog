@@ -27,3 +27,14 @@ section{
   flex-direction: row;
   flex-flow: wrap;
 }
+
+
+.fade{
+  transition: all 0.36s ease-in-out;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.483);
+}
