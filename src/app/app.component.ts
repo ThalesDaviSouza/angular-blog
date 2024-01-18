@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { IImageSlider } from './carousel/types/IImageSlider';
 import { IPost } from './types/IPost';
+import { IImageSlider } from './components/carousel/types/IImageSlider';
 
 @Component({
   selector: 'app-root',

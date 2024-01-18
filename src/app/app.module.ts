@@ -3,20 +3,16 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { SidenavComponent } from './sidenav/sidenav.component';
-import { CarouselModule } from './carousel/carousel.module';
-import { SmallCardComponent } from './small-card/small-card.component';
+import { ComponentsModule } from './components/components.module';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    SidenavComponent,
-    SmallCardComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    CarouselModule
+    ComponentsModule
   ],
   providers: [],
   bootstrap: [AppComponent],
