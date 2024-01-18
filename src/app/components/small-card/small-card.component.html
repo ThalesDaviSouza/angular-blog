@@ -1,4 +1,4 @@
-<article>
+<article [routerLink]="['post', post.id]">
   <div class="post-img-container">
     <div
     [ngStyle]="{'background-image': 'url('+post.imageURL+')'}"

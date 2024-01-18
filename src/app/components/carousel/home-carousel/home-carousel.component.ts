@@ -32,7 +32,6 @@ export class HomeCarouselComponent implements OnInit {
 
   getCurrentSlideImageUrl():string {
     return `url('${this.slides[this.currentIndex].url}')`
-    // return `${this.slides[this.currentIndex].url}`
   }
 
   getCurrentSlide():IImageSlider {

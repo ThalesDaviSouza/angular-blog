@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { SidenavComponent } from './sidenav/sidenav.component';
 import { SmallCardComponent } from './small-card/small-card.component';
 import { CarouselModule } from './carousel/carousel.module';
+import { AppRoutingModule } from '../app-routing.module';
 
 
 
@@ -13,7 +14,8 @@ import { CarouselModule } from './carousel/carousel.module';
   ],
   imports: [
     CommonModule,
-    CarouselModule
+    CarouselModule,
+    AppRoutingModule
   ],
   exports: [
     CarouselModule,

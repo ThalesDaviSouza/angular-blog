@@ -8,7 +8,7 @@ import { IPost } from '../types/IPost';
 })
 export class SmallCardComponent implements OnInit {
 
-  @Input() post:IPost = {title:'', shortDescription:'', imageURL:'', tag:''};
+  @Input() post:IPost = {id: 0, title:'', shortDescription:'', imageURL:'', tag:''};
 
   constructor() { }
 

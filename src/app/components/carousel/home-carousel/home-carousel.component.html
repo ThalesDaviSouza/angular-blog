@@ -1,24 +1,26 @@
-<div class="carousel"
-  [ngStyle]="{'background-image' : getCurrentSlideImageUrl()}"
-  [ngClass]="{'slide-right' : slideRigthAnimation}"
->
-  <div class="fade"></div>
-  <h1 class="carousel-title">
-    Logo
-  </h1>
+<a [routerLink]="['post', getCurrentSlide().id]">
+  <div class="carousel"
+    [ngStyle]="{'background-image' : getCurrentSlideImageUrl()}"
+    [ngClass]="{'slide-right' : slideRigthAnimation}"
+  >
+    <div class="fade"></div>
+    <h1 class="carousel-title">
+      Logo
+    </h1>
 
-  <div class="carousel-content">
+    <div class="carousel-content">
 
-    <div class="carousel-info">
-      <h1>{{getCurrentSlide().title}}</h1>
-      <span *ngFor="let tag of getCurrentSlide().tags" class="tag">{{ tag }}</span>
-      <span>{{ getCurrentSlide().description }}</span>
+      <div class="carousel-info">
+        <h1>{{getCurrentSlide().title}}</h1>
+        <span *ngFor="let tag of getCurrentSlide().tags" class="tag">{{ tag }}</span>
+        <span>{{ getCurrentSlide().description }}</span>
+      </div>
+
+      <div class="carousel-arrows">
+        <div class="left-arrow" (click)="goToPreviousSlide()"> ◀ </div>
+        <div class="right-arrow"  (click)="goToNextSlide()"> ▶ </div>
+      </div>
+
     </div>
-
-    <div class="carousel-arrows">
-      <div class="left-arrow" (click)="goToPreviousSlide()"> ◀ </div>
-      <div class="right-arrow"  (click)="goToNextSlide()"> ▶ </div>
-    </div>
-
   </div>
-</div>
+</a>
