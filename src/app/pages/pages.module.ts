@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { HomeComponent } from './home/home.component';
 import { ComponentsModule } from '../components/components.module';
 import { PostComponent } from './post/post.component';
+import { AppRoutingModule } from '../app-routing.module';
 
 
 
@@ -13,7 +14,8 @@ import { PostComponent } from './post/post.component';
   ],
   imports: [
     CommonModule,
-    ComponentsModule
+    ComponentsModule,
+    AppRoutingModule
   ],
   exports: [
     HomeComponent
