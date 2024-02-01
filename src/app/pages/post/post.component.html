@@ -2,14 +2,23 @@
   <section class="post-main-info">
     <div class="left">
       <div class="title">
-        <span *ngFor="let tag of post.tags">{{ tag }}</span>
+        <div class="tags-container">
+          <span
+            class="tag"
+            *ngFor="let tag of post.tags">
+            {{ tag }}
+          </span>
+        </div>
         <h2>{{post.title}}</h2>
       </div>
       <div class="post-about">
         <p>Written by:</p>
-        <p>
+        <p id="author">
           {{post.author}}
         </p>
+      </div>
+      <div>
+        <a href="">Go back</a>
       </div>
     </div>
 
@@ -17,4 +26,18 @@
       <img [src]="post.url" alt="">
     </div>
   </section>
+  <article>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tristique metus a velit dignissim, a luctus tortor eleifend. Praesent odio mauris, elementum vel interdum sed, ultricies non erat. Proin semper lacinia fermentum. Nulla pellentesque mauris quis justo ornare, sed consequat libero bibendum. Nunc posuere metus id congue dictum. In eu tellus eget justo dictum finibus vitae quis elit. Curabitur ligula elit, vestibulum luctus vulputate molestie, eleifend lacinia nunc. Vestibulum consequat varius porttitor. Integer molestie dapibus leo, ut porta massa. Sed sit amet justo et ante faucibus varius. Aenean mauris quam, condimentum ac aliquet non, commodo in mauris. Morbi dictum elit sit amet tellus bibendum efficitur. Pellentesque sagittis, felis in tincidunt laoreet, massa arcu scelerisque dui, sed ultrices turpis elit vel purus.
+    </p>
+    <p>
+      Etiam tortor nisi, consequat a magna dapibus, interdum vulputate dolor. Nulla facilisi. Sed et lacus ullamcorper, euismod felis non, imperdiet sem. Ut in vehicula velit, sed fermentum arcu. Cras dictum ipsum at dolor ullamcorper, at semper tortor vulputate. Pellentesque a elementum lorem. Curabitur tempor cursus tristique. Nullam venenatis felis a cursus malesuada. Fusce aliquam id massa vitae pharetra. Mauris consectetur quis turpis vitae sodales. Maecenas accumsan nisi sed velit egestas facilisis.
+    </p>
+    <p>
+      Maecenas velit massa, tincidunt ut orci ac, suscipit hendrerit tellus. Pellentesque non interdum ante. Suspendisse aliquam mi ac diam sagittis aliquam. In sapien ante, mollis at purus in, ultricies aliquam arcu. Etiam at quam molestie, posuere mauris ut, cursus orci. Pellentesque a viverra libero. Nullam tempus id diam non scelerisque. Curabitur tristique augue nunc, nec pretium nulla imperdiet sed. Proin nisi sapien, consectetur sit amet elit nec, ultrices ultricies neque
+    </p>
+    <p>
+      Aenean maximus ultricies purus vel blandit. Morbi faucibus sapien lobortis odio blandit, sit amet tempus elit finibus. Vestibulum venenatis vulputate erat, at lacinia ante laoreet eget. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed feugiat vel ipsum eu faucibus. Phasellus pulvinar viverra consectetur. Mauris quis tempus orci. Morbi tincidunt enim et ultricies commodo. Duis ac velit vitae augue interdum finibus
+    </p>
+  </article>
 </main>

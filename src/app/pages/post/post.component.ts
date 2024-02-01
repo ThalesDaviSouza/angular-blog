@@ -2,12 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { IImageSlider } from 'src/app/components/carousel/types/IImageSlider';
 import { postsDb } from 'src/app/data/postRep';
-import { IPost } from 'src/app/types/IPost';
 
 @Component({
   selector: 'app-post',
   templateUrl: './post.component.html',
-  styleUrls: ['./post.component.css']
+  styleUrls: ['./post.component.css', './article.component.css']
 })
 export class PostComponent implements OnInit {
   postId:number = 0

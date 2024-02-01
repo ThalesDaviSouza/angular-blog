@@ -36,7 +36,7 @@ export const postsDb:IImageSlider[] = [
   },
   {
     id: 5,
-    title:'Drinks',
+    title:'Drinks Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit',
     description: 'More fun',
     tags: ['drinks'],
     url: '../assets/drink-card.jpg',
