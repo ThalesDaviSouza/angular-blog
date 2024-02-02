@@ -12,20 +12,21 @@ export class HomeCarouselComponent implements OnInit {
   @Input() slides:IImageSlider[] = [];
 
   currentIndex:number = 0;
-
   slideRigthAnimation:boolean = false;
+  timerToNextSlide:number = 4000;
+  isToGoToNextSlide:boolean = true;
 
   constructor() { }
 
   ngOnInit(): void {
-
-    this.autoNextSlide(4000)
-
+    this.autoNextSlide(this.timerToNextSlide)
   }
 
   autoNextSlide(ms: number):void {
     setTimeout((_:any) => {
-      this.goToNextSlide();
+      if(this.isToGoToNextSlide)
+        this.goToNextSlide();
+
       this.autoNextSlide(ms);
     }, ms)
   }
@@ -39,6 +40,8 @@ export class HomeCarouselComponent implements OnInit {
   }
 
   goToNextSlide():void {
+    this.isToGoToNextSlide = false;
+
     const isLastSlide = this.currentIndex + 1 > this.slides.length - 1;
 
     this.slideRigthAnimation = true;
@@ -48,9 +51,16 @@ export class HomeCarouselComponent implements OnInit {
     }else{
       this.currentIndex = 0;
     }
+
+    setTimeout((_:any) => {
+      this.isToGoToNextSlide = true;
+    }, this.timerToNextSlide)
+
   }
 
   goToPreviousSlide():void {
+    this.isToGoToNextSlide = false;
+
     const isFirstSlide = this.currentIndex == 0;
 
     if(!isFirstSlide){
@@ -58,6 +68,10 @@ export class HomeCarouselComponent implements OnInit {
     }else{
       this.currentIndex = this.slides.length - 1;
     }
+
+    setTimeout((_:any) => {
+      this.isToGoToNextSlide = true;
+    }, this.timerToNextSlide)
   }
 
 }

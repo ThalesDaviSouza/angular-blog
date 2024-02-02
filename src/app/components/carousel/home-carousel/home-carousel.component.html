@@ -1,9 +1,13 @@
-<a [routerLink]="['post', getCurrentSlide().id]">
+<a [routerLink]="['post', getCurrentSlide().id]"></a>
   <div class="carousel"
     [ngStyle]="{'background-image' : getCurrentSlideImageUrl()}"
     [ngClass]="{'slide-right' : slideRigthAnimation}"
   >
-    <div class="fade"></div>
+    <div
+      class="fade"
+      [routerLink]="['post', getCurrentSlide().id]"
+    >
+    </div>
     <h1 class="carousel-title">
       Thales Davi
     </h1>
@@ -23,4 +27,3 @@
 
     </div>
   </div>
-</a>
